@@ -15,17 +15,8 @@ Follow the steps below to install and use this template in your own projects.
 3. Run the following command to install the template locally:
 
    ```bash
-   dotnet new install ./path-to-template
+   dotnet new install ./HendryWebApiTemplate
    ```
-
-   Replace `./path-to-template` with the relative path to the template directory.
-
-   For example:
-
-   ```bash
-   dotnet new install ./MyWebApiTemplate
-   ```
-
    This command will register the template with your .NET CLI, making it available for use in future projects.
 
 ### Step 2: Create a New Project Using the Template
@@ -33,10 +24,10 @@ Follow the steps below to install and use this template in your own projects.
 Once the template is installed, you can create a new project using the template by running the following command:
 
 ```bash
-dotnet new mywebapi -n YourProjectName
+dotnet new hendrywebapi -n YourProjectName
 ```
 
-- Replace `mywebapi` with the `shortName` specified in the `template.json` file.
+- Replace `hendrywebapi` with the `shortName` specified in the `template.json` file.
 - Replace `YourProjectName` with the desired name of your new project.
 
 This will create a new folder named `YourProjectName` with all the necessary files and folder structure based on the template.
@@ -63,14 +54,14 @@ If you want to modify the template for your own needs:
 
 1. Open the template directory.
 2. Make changes to the template files (e.g., code, configuration, structure).
-3. Reinstall the updated template using `dotnet new install ./path-to-template` as described earlier.
+3. Reinstall the updated template using `dotnet new install ./HendryWebApiTemplate` as described earlier.
 
 ## Uninstalling the Template
 
 If you ever need to uninstall the template, run the following command:
 
 ```bash
-dotnet new uninstall ./path-to-template
+dotnet new uninstall ./HendryWebApiTemplate
 ```
 
 This will remove the template from your local installation.
@@ -85,9 +76,3 @@ For more information on how to create and manage .NET templates, you can refer t
 - [dotnet new command](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new)
 
 ---
-
-This template is designed to help streamline the process of starting a new .NET Web API project with a predefined structure and configuration. If you have any questions or need further assistance, feel free to reach out.
-
----
-
-Let me know if you need further changes!
