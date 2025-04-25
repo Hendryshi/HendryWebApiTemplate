@@ -1,0 +1,223 @@
+using Common.Domain.Attributes;
+
+namespace Common.Domain.Common.Definition
+{
+    public class EntityDefinitionTableBase
+    {
+        public string Value { get; set; }
+        public string Description { get; set; }
+    }
+
+    
+    [EntityDefinition]
+    public class DEFCountry : EntityDefinitionTableBase
+    {
+        public string DialingCode { get; set; }
+
+        public static class Values
+        {
+            public const string AF = "AF"; // Afghanistan
+            public const string AL = "AL"; // Albanie
+            public const string DZ = "DZ"; // Algérie
+            public const string AD = "AD"; // Andorre
+            public const string AO = "AO"; // Angola
+            public const string AI = "AI"; // Anguille
+            public const string AG = "AG"; // Antigua-et-Barbuda
+            public const string AR = "AR"; // Argentine
+            public const string AM = "AM"; // Arménie
+            public const string AU = "AU"; // Australie
+            public const string AT = "AT"; // Autriche
+            public const string AZ = "AZ"; // Azerbaïdjan
+            public const string BS = "BS"; // Bahamas
+            public const string BH = "BH"; // Bahreïn
+            public const string BD = "BD"; // Bangladesh
+            public const string BB = "BB"; // Barbade
+            public const string BY = "BY"; // Biélorussie
+            public const string BE = "BE"; // Belgique
+            public const string BZ = "BZ"; // Belize
+            public const string BJ = "BJ"; // Bénin
+            public const string BT = "BT"; // Bhoutan
+            public const string BO = "BO"; // Bolivie
+            public const string BA = "BA"; // Bosnie-Herzégovine
+            public const string BW = "BW"; // Botswana
+            public const string BR = "BR"; // Brésil
+            public const string BN = "BN"; // Brunei
+            public const string BF = "BF"; // Burkina Faso
+            public const string BI = "BI"; // Burundi
+            public const string CV = "CV"; // Cap-Vert
+            public const string KH = "KH"; // Cambodge
+            public const string CM = "CM"; // Cameroun
+            public const string CA = "CA"; // Canada
+            public const string CF = "CF"; // République centrafricaine
+            public const string TD = "TD"; // Tchad
+            public const string CL = "CL"; // Chili
+            public const string CN = "CN"; // Chine
+            public const string CO = "CO"; // Colombie
+            public const string KM = "KM"; // Comores
+            public const string CD = "CD"; // République Démocratique du Congo
+            public const string CG = "CG"; // Congo
+            public const string CK = "CK"; // Îles Cook
+            public const string CR = "CR"; // Costa Rica
+            public const string CI = "CI"; // Côte d'Ivoire
+            public const string HR = "HR"; // Croatie
+            public const string CU = "CU"; // Cuba
+            public const string CY = "CY"; // Chypre
+            public const string CZ = "CZ"; // République tchèque
+            public const string DK = "DK"; // Danemark
+            public const string DJ = "DJ"; // Djibouti
+            public const string DM = "DM"; // Dominique
+            public const string DO = "DO"; // République Dominicaine
+            public const string EC = "EC"; // Équateur
+            public const string EG = "EG"; // Égypte
+            public const string SV = "SV"; // Salvador
+            public const string GQ = "GQ"; // Guinée équatoriale
+            public const string ER = "ER"; // Érythrée
+            public const string EE = "EE"; // Estonie
+            public const string SZ = "SZ"; // Eswatini
+            public const string ET = "ET"; // Éthiopie
+            public const string FJ = "FJ"; // Fidji
+            public const string FI = "FI"; // Finlande
+            public const string FR = "FR"; // France
+            public const string GA = "GA"; // Gabon
+            public const string GM = "GM"; // Gambie
+            public const string GE = "GE"; // Géorgie
+            public const string DE = "DE"; // Allemagne
+            public const string GH = "GH"; // Ghana
+            public const string GI = "GI"; // Gibraltar
+            public const string GR = "GR"; // Grèce
+            public const string GL = "GL"; // Groenland
+            public const string GD = "GD"; // Grenade
+            public const string GT = "GT"; // Guatemala
+            public const string GN = "GN"; // Guinée
+            public const string GW = "GW"; // Guinée-Bissau
+            public const string GY = "GY"; // Guyana
+            public const string HT = "HT"; // Haïti
+            public const string HM = "HM"; // Îles Heard-et-MacDonald
+            public const string VA = "VA"; // Vatican
+            public const string HN = "HN"; // Honduras
+            public const string HU = "HU"; // Hongrie
+            public const string IS = "IS"; // Islande
+            public const string IN = "IN"; // Inde
+            public const string ID = "ID"; // Indonésie
+            public const string IR = "IR"; // Iran
+            public const string IQ = "IQ"; // Irak
+            public const string IE = "IE"; // Irlande
+            public const string IL = "IL"; // Israël
+            public const string IT = "IT"; // Italie
+            public const string JM = "JM"; // Jamaïque
+            public const string JP = "JP"; // Japon
+            public const string JO = "JO"; // Jordanie
+            public const string KZ = "KZ"; // Kazakhstan
+            public const string KE = "KE"; // Kenya
+            public const string KI = "KI"; // Kiribati
+            public const string KW = "KW"; // Koweït
+            public const string KG = "KG"; // Kirghizistan
+            public const string LA = "LA"; // Laos
+            public const string LV = "LV"; // Lettonie
+            public const string LB = "LB"; // Liban
+            public const string LS = "LS"; // Lesotho
+            public const string LR = "LR"; // Libéria
+            public const string LY = "LY"; // Libye
+            public const string LI = "LI"; // Liechtenstein
+            public const string LT = "LT"; // Lituanie
+            public const string LU = "LU"; // Luxembourg
+            public const string MG = "MG"; // Madagascar
+            public const string MW = "MW"; // Malawi
+            public const string MY = "MY"; // Malaisie
+            public const string MV = "MV"; // Maldives
+            public const string ML = "ML"; // Mali
+            public const string MT = "MT"; // Malte
+            public const string MH = "MH"; // Îles Marshall
+            public const string MR = "MR"; // Mauritanie
+            public const string MU = "MU"; // Maurice
+            public const string MX = "MX"; // Mexique
+            public const string FM = "FM"; // Micronésie
+            public const string MD = "MD"; // Moldavie
+            public const string MC = "MC"; // Monaco
+            public const string MN = "MN"; // Mongolie
+            public const string ME = "ME"; // Monténégro
+            public const string MS = "MS"; // Montserrat
+            public const string MA = "MA"; // Maroc
+            public const string MZ = "MZ"; // Mozambique
+            public const string MM = "MM"; // Birmanie
+            public const string NA = "NA"; // Namibie
+            public const string NR = "NR"; // Nauru
+            public const string NP = "NP"; // Népal
+            public const string NL = "NL"; // Pays-Bas
+            public const string NC = "NC"; // Nouvelle-Calédonie
+            public const string NZ = "NZ"; // Nouvelle-Zélande
+            public const string NI = "NI"; // Nicaragua
+            public const string NE = "NE"; // Niger
+            public const string NG = "NG"; // Nigéria
+            public const string NU = "NU"; // Niue
+            public const string KP = "KP"; // Corée du Nord
+            public const string NO = "NO"; // Norvège
+            public const string OM = "OM"; // Oman
+            public const string PK = "PK"; // Pakistan
+            public const string PW = "PW"; // Palaos
+            public const string PA = "PA"; // Panama
+            public const string PG = "PG"; // Papouasie-Nouvelle-Guinée
+            public const string PY = "PY"; // Paraguay
+            public const string PE = "PE"; // Pérou
+            public const string PH = "PH"; // Philippines
+            public const string PL = "PL"; // Pologne
+            public const string PT = "PT"; // Portugal
+            public const string PR = "PR"; // Porto Rico
+            public const string QA = "QA"; // Qatar
+            public const string RO = "RO"; // Roumanie
+            public const string RU = "RU"; // Russie
+            public const string RW = "RW"; // Rwanda
+            public const string SH = "SH"; // Sainte-Hélène
+            public const string KN = "KN"; // Saint-Kitts-et-Nevis
+            public const string LC = "LC"; // Sainte-Lucie
+            public const string VC = "VC"; // Saint-Vincent-et-les-Grenadines
+            public const string WS = "WS"; // Samoa
+            public const string SM = "SM"; // Saint-Marin
+            public const string ST = "ST"; // São Tom?et-Príncipe
+            public const string SA = "SA"; // Arabie saoudite
+            public const string SN = "SN"; // Sénégal
+            public const string RS = "RS"; // Serbie
+            public const string SC = "SC"; // Seychelles
+            public const string SL = "SL"; // Sierra Leone
+            public const string SG = "SG"; // Singapour
+            public const string SX = "SX"; // Sint Maarten
+            public const string SK = "SK"; // Slovaquie
+            public const string SI = "SI"; // Slovénie
+            public const string SB = "SB"; // Îles Salomon
+            public const string SO = "SO"; // Somalie
+            public const string ZA = "ZA"; // Afrique du Sud
+            public const string GS = "GS"; // Géorgie du Sud-et-les Îles Sandwich du Sud
+            public const string SS = "SS"; // Soudan du Sud
+            public const string ES = "ES"; // Espagne
+            public const string LK = "LK"; // Sri Lanka
+            public const string SD = "SD"; // Soudan
+            public const string SR = "SR"; // Suriname
+            public const string SE = "SE"; // Suède
+            public const string CH = "CH"; // Suisse
+            public const string SY = "SY"; // Syrie
+            public const string TJ = "TJ"; // Tadjikistan
+            public const string TZ = "TZ"; // Tanzanie
+            public const string TH = "TH"; // Thaïlande
+            public const string TG = "TG"; // Togo
+            public const string TO = "TO"; // Tonga
+            public const string TT = "TT"; // Trinit?et-Tobago
+            public const string TN = "TN"; // Tunisie
+            public const string TR = "TR"; // Turquie
+            public const string TM = "TM"; // Turkménistan
+            public const string TV = "TV"; // Tuvalu
+            public const string UG = "UG"; // Ouganda
+            public const string UA = "UA"; // Ukraine
+            public const string AE = "AE"; // Émirats Arabes Unis
+            public const string GB = "GB"; // Royaume-Uni
+            public const string US = "US"; // États-Unis
+            public const string UY = "UY"; // Uruguay
+            public const string UZ = "UZ"; // Ouzbékistan
+            public const string VU = "VU"; // Vanuatu
+            public const string VE = "VE"; // Venezuela
+            public const string VN = "VN"; // Vietnam
+            public const string YE = "YE"; // Yémen
+            public const string ZM = "ZM"; // Zambie
+            public const string ZW = "ZW"; // Zimbabwe
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Hendryshi",
+  "classifications": ["Web", "API"],
+  "identity": "Hendryshi.Templates.WebApi",
+  "name": "Hendry Template",
+  "shortName": "hendrywebapi",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "HendryTemplate",
+  "preferNameDirectory": true
+}
